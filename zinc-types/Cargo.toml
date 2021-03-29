@@ -23,7 +23,7 @@ semver = "0.11"
 zksync = { git = "https://github.com/matter-labs/zksync", branch = "master" }
 zksync_types = { git = "https://github.com/matter-labs/zksync", branch = "master" }
 zksync_eth_signer = { git = "https://github.com/matter-labs/zksync", branch = "master" }
-num_old = { package = "num", version = "0.2.1" }
+num_old = { package = "num", version = "0.2.1", features = [ "serde" ] }
 
 zinc-project = { path = "../zinc-project" }
 zinc-const = { path = "../zinc-const" }
