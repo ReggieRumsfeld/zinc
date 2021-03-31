@@ -14,6 +14,7 @@ use zksync_types::TokenLike;
 
 use self::error::Error;
 use self::msg::Msg;
+use crate::num_compat_backward;
 
 ///
 /// The transaction, understandable by zkSync, front-end, Zandbox, and Zargo.
