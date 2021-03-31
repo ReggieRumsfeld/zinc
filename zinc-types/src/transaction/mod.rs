@@ -56,7 +56,7 @@ impl Transaction {
                     transfer.from,
                     transfer.to,
                     token.address,
-                    num_old::BigUint::new(zksync::utils::closest_packable_token_amount(&transfer.amount).to_u32_digits()),
+                    num_compat_backward(zksync::utils::closest_packable_token_amount(&transfer.amount)),
                 ))
             }
             ZkSyncTx::Withdraw(..) => Err(Error::UnsupportedTransaction("Withdraw")),
